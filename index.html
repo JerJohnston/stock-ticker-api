@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Finder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Finder</h1>
+        </header>
+        <form action="#" id="search">
+            <h2>Enter Stock Symbol</h2>
+            <div class="control">
+                <label for="symbolSearch"></label>
+                <input type="text" id="symbolSearch" name="symbolSearch" placeholder="e.g. GME">
+            </div>
+            <div class="control">
+                <input type="submit" value="Get Quote">
+            </div>
+            <div class="errorMessage"></div>
+        </form>
+        <div class="stockView">
+            <h2>Stock Quotes (Prices in USD)</h2>
+            <table class="stock-data">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stock Symbol</th>
+                        <th>Open Price</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Closing</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr>
+                        <td class="date">11-11-1111</td>
+                        <td class="symbol">abcd</td>
+                        <td class="price-open">111.1111</td>
+                        <td class="price-high">111.1111&#x25B2;</td>
+                        <td class="price-low">111.1111&#x25BC;</td>
+                        <td class="price-close">111.1111</td>
+                        <td class="volume">111111111</td>
+                    </tr>
+                </tbody> -->
+            </table>
+        </div>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+</html>
+

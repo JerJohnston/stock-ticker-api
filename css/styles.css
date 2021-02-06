@@ -1,0 +1,130 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #0d0d0d;
+    color: #efefef;
+}
+
+.container {
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+/* header styling */
+
+header {
+    background-image: url('/img/stock-market-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 2rem;text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+/* Search Form */
+
+#search {
+    background-color: #012840;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#search h2 {
+    padding: 1.5rem;
+}
+
+#search input[type=text] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.35rem;
+}
+
+#search input[type=submit] {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #1A4A73;
+    color: #fefefe;
+    border: none;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#search input[type=submit]:hover {
+    background-color: #71B85E;
+
+    
+}
+
+/* Data Table Styling */
+
+.stockView {
+    background-color: #012840;
+    padding: 1rem;
+    padding-bottom: 4rem;
+
+    
+}
+
+.stockView h2 {
+    border-bottom: 2px solid #fefefe;
+}
+
+.stock-data {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 56rem;
+}
+
+th {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+.date {
+    font-style: italic;
+}
+
+.symbol {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: tomato;
+}
+
+.price-open {
+    color: #04B2D9;
+}
+
+.price-high {
+    color: #0DF205;
+}
+
+.price-low {
+    color: #F20505;
+}
+
+.price-close {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.volume {
+    color: #F2A205;
+}
+
+.error {
+    color: #F20505
+}
+
+.errorMessage {
+    padding: 1rem;
+}

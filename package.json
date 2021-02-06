@@ -1,0 +1,16 @@
+{
+  "name": "stock-ticker-api",
+  "version": "1.0.0",
+  "description": "Stock Ticker API that displays stock info from a user selected stock symbol",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.3.1"
+  }
+}

@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./models/data-fetcher","loc":{"line":1,"column":20}}],"generated":{"js":"\"use strict\";var e=require(\"./models/data-fetcher\");(0,e.hello)();"},"hash":"8f511c1343d184e7e872428986333d9b"}
