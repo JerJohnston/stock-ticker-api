@@ -4,7 +4,7 @@ window.addEventListener('load', function(e){
     
 const searchURL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&apikey=F7VCYFDO89HO5ZRP&symbol=';
 
-// Get data function retrieves data from Alpha Vantage and returns the result in JSON format
+// Asynchronous get data function retrieves data from Alpha Vantage and returns the result in JSON format
 
     async function getData (stockSearch){
         let url = searchURL + stockSearch;
@@ -15,14 +15,24 @@ const searchURL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&
 
 // 
 
+// submit function to handle the form
+
     document.forms.search.addEventListener('submit', function(e) {
+
+        // prevents the page from reloading once the user clicks the submit button
         e.preventDefault();
-        
+
+        // reference variables
+
         const stockData = getData(e.currentTarget.elements.symbolSearch.value);
         const stockTable = document.querySelector('.stock-data');
+
+        // template literal to create the necessary markup and insert the data from the Alpha Vantage API into the Stock Finder App
         
         stockData
         .then(res => {
+
+            // displays error message when user enters an incorrect symbol
             if(res['Error Message']){
                 const error = `<p class="error">Invalid Symbol Input!</p>`
                 document.querySelector('.errorMessage').innerHTML = error
